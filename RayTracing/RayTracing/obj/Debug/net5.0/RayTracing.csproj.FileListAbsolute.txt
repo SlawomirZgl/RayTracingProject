@@ -1,0 +1,12 @@
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\bin\Debug\net5.0\RayTracing.deps.json
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\bin\Debug\net5.0\RayTracing.dll
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\bin\Debug\net5.0\ref\RayTracing.dll
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\bin\Debug\net5.0\RayTracing.pdb
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.csprojAssemblyReference.cache
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.AssemblyInfoInputs.cache
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.AssemblyInfo.cs
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.csproj.CoreCompileInputs.cache
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.dll
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\ref\RayTracing.dll
+C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.pdb
