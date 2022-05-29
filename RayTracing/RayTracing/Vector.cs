@@ -62,15 +62,7 @@ namespace RayTracing
             temp.w = b.w * a;
             return temp;
         }
-        public static Vector operator *(Vector a, double b)
-        {
-            Vector temp = new Vector();
-            temp.x = a.x * b;
-            temp.y = a.y * b;
-            temp.z = a.z * b;
-            temp.w = a.w * b;
-            return temp;
-        }
+         
         public Vector Negate()
         {
             this.x = -this.x;

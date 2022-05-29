@@ -10,3 +10,15 @@ C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\De
 C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.dll
 C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\ref\RayTracing.dll
 C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.pdb
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.csproj.AssemblyReference.cache
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.AssemblyInfoInputs.cache
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.AssemblyInfo.cs
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.csproj.CoreCompileInputs.cache
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\ref\RayTracing.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\Debug\net5.0\RayTracing.pdb
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\Debug\net5.0\RayTracing.deps.json
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\Debug\net5.0\RayTracing.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\Debug\net5.0\ref\RayTracing.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\Debug\net5.0\RayTracing.pdb

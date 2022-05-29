@@ -76,6 +76,15 @@ namespace RayTracing
             res.w = a.w - b.w;
             return res;
         }
+        public static Point operator -(Point a)
+        {
+            Point res = new Point();
+            res.x = -a.x;
+            res.y = -a.y;
+            res.z = -a.z;
+            res.w = -a.w;
+            return res;
+        }
         public Point Negate()
         {
             this.x = -this.x;
