@@ -11,14 +11,14 @@ namespace RayTracing
         public double x;
         public double y;
         public double z;
-        public double w;
+     
 
-        public Tuple(double x, double y, double z, double w)
+        public Tuple(double x, double y, double z)
         {
             this.x = x;
             this.y = y;
             this.z = z;
-            this.w = w;
+           
         }
         public double Magnitude()
         {
@@ -28,8 +28,8 @@ namespace RayTracing
         {
             if (Utility.Equality(a.x, b.x) &&
                 Utility.Equality(a.y, b.y) &&
-                Utility.Equality(a.z, b.z) &&
-                Utility.Equality(a.w, b.w))
+                Utility.Equality(a.z, b.z))
+             
             {
                 return true;
             }
@@ -40,8 +40,8 @@ namespace RayTracing
         {
             if (Utility.Equality(a.x, b.x) &&
                 Utility.Equality(a.y, b.y) &&
-                Utility.Equality(a.z, b.z) &&
-                Utility.Equality(a.w, b.w))
+                Utility.Equality(a.z, b.z) )
+             
             {
                 return false;
             }

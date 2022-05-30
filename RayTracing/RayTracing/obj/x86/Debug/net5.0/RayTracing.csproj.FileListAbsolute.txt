@@ -14,3 +14,9 @@ C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\x86\
 C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\RayTracing.runtimeconfig.dev.json
 C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\x86\Debug\net5.0\RayTracing.csproj.AssemblyReference.cache
 C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\x86\Debug\net5.0\RayTracing.genruntimeconfig.cache
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\obj\x86\Debug\net5.0\RayTracing.csproj.CopyComplete

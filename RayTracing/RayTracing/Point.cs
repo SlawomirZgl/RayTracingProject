@@ -8,9 +8,9 @@ namespace RayTracing
 {
     public class Point : Tuple
     {
-        Point() : base(0.0, 0.0, 0.0, 1.0)
+        Point() : base(0.0, 0.0, 0.0)
         { }
-        public Point(double x = 0.0, double y = 0.0, double z = 0.0, double w = 1.0) : base(x, y, z, w)
+        public Point(double x = 0.0, double y = 0.0, double z = 0.0) : base(x, y, z)
         {
 
         }
@@ -20,7 +20,7 @@ namespace RayTracing
             res.x = a.x + b.x;
             res.y = a.y + b.y;
             res.z = a.z + b.z;
-            res.w = a.w + b.w;
+           
             return res;
 
         }
@@ -31,7 +31,7 @@ namespace RayTracing
             res.x = a.x + b.x;
             res.y = a.y + b.y;
             res.z = a.z + b.z;
-            res.w = a.w + b.w;
+           
             return res;
 
         }
@@ -42,7 +42,7 @@ namespace RayTracing
             res.x = a.x + b.x;
             res.y = a.y + b.y;
             res.z = a.z + b.z;
-            res.w = a.w + b.w;
+          
             return res;
         }
 
@@ -52,7 +52,7 @@ namespace RayTracing
             res.x = a.x - b.x;
             res.y = a.y - b.y;
             res.z = a.z - b.z;
-            res.w = a.w - b.w;
+           
             return res;
         }
 
@@ -62,7 +62,7 @@ namespace RayTracing
             res.x = a.x - b.x;
             res.y = a.y - b.y;
             res.z = a.z - b.z;
-            res.w = a.w - b.w;
+          
             return res;
 
         }
@@ -73,7 +73,7 @@ namespace RayTracing
             res.x = a.x - b.x;
             res.y = a.y - b.y;
             res.z = a.z - b.z;
-            res.w = a.w - b.w;
+           
             return res;
         }
         public static Point operator -(Point a)
@@ -82,7 +82,7 @@ namespace RayTracing
             res.x = -a.x;
             res.y = -a.y;
             res.z = -a.z;
-            res.w = -a.w;
+           
             return res;
         }
         public Point Negate()
@@ -90,7 +90,7 @@ namespace RayTracing
             this.x = -this.x;
             this.y = -this.y;
             this.z = -this.z;
-            this.w = -this.w;
+          
             return this;
         }
 
@@ -100,7 +100,7 @@ namespace RayTracing
             res.x = a.x * b;
             res.y = a.y * b;
             res.z = a.z * b;
-            res.w = a.w * b;
+           
             return res;
         }
 
@@ -110,7 +110,7 @@ namespace RayTracing
             res.x = b.x * a;
             res.y = b.y * a;
             res.z = b.z * a;
-            res.w = b.w * a;
+           
             return res;
         }
 
@@ -119,7 +119,7 @@ namespace RayTracing
             this.x *= s;
             this.y *= s;
             this.z *= s;
-            this.w *= s;
+          
 
             return this;
         }

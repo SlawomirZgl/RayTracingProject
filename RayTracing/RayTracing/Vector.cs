@@ -6,21 +6,30 @@ using System.Threading.Tasks;
 
 namespace RayTracing
 {
-    public class Vector : Tuple
+    public struct Vector 
     {
-        Vector() : base(0.0, 0.0, 0.0, 0.0)
-        { }
-        public Vector(double x = 0.0, double y = 0.0, double z = 0.0, double w = 0.0) : base(x, y, z, w)
-        {
+        public double x;
+        public double y;
+        public double z;
 
+        public Vector(double x = 0.0, double y = 0.0, double z = 0.0) 
+        {
+            this.x = x;
+            this.y = y;
+            this.z = z;
         }
+
+        public double X { get { return x; } set { x = value; } }
+        public double Y { get { return y; } set { y = value; } }
+        public double Z { get { return z; } set { z = value; } }
+
         public static Vector operator +(Vector a, Vector b)
         {
             Vector res = new Vector();
             res.x = a.x + b.x;
             res.y = a.y + b.y;
             res.z = a.z + b.z;
-            res.w = a.w + b.w;
+         
             return res;
 
         }
@@ -30,7 +39,7 @@ namespace RayTracing
             res.x = a.x - b.x;
             res.y = a.y - b.y;
             res.z = a.z - b.z;
-            res.w = a.w - b.w;
+           
             return res;
 
         }
@@ -40,7 +49,7 @@ namespace RayTracing
             res.x = -a.x;
             res.y = -a.y;
             res.z = -a.z;
-            res.w = -a.w;
+        
             return res;
         }
         public static Vector operator *(Vector a, double b)
@@ -49,7 +58,7 @@ namespace RayTracing
             temp.x = a.x * b;
             temp.y = a.y * b;
             temp.z = a.z * b;
-            temp.w = a.w * b;
+           
             return temp;
         }
 
@@ -59,16 +68,29 @@ namespace RayTracing
             temp.x = b.x * a;
             temp.y = b.y * a;
             temp.z = b.z * a;
-            temp.w = b.w * a;
+          
             return temp;
         }
-         
+        public static Vector operator /(Vector a, double b)
+        {
+            if (b == 0)
+            {
+                throw new DivideByZeroException();
+            }
+                Vector temp = new Vector();
+                temp.x = a.x / b;
+                temp.y = a.y / b;
+                temp.z = a.z / b;
+
+                return temp;
+           
+        }
         public Vector Negate()
         {
             this.x = -this.x;
             this.y = -this.y;
             this.z = -this.z;
-            this.w = -this.w;
+           
             return this;
         }
 
@@ -77,11 +99,13 @@ namespace RayTracing
             this.x *= s;
             this.y *= s;
             this.z *= s;
-            this.w *= s;
+         
 
             return this;
         }
-
+        public double Dot(Vector a) {
+            return (this.x * a.x + this.y * a.y + this.z * a.z);
+        }
         public Vector Cross(Vector b)
         {
             Vector res = new Vector();
@@ -99,6 +123,13 @@ namespace RayTracing
             res.z = a.x * b.y - a.y * b.x;
             return res;
         }
+        public double Length()
+        {  return Math.Sqrt(X * X + Y * Y + Z * Z);  }
+        public double LengthSqr()
+        {  return X * X + Y * Y + Z * Z; }
+        public Vector Normalized()
+        {  return this / this.Length();  }
+
     }
-     
+
 }

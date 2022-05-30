@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace RayTracing
 {
@@ -6,9 +7,27 @@ namespace RayTracing
     {
       public static void Main()
         {
-            Point p1 = new Point(2, 0, 1.001);
-            Point p2 = new Point(1, 0, 1.001);
-            Console.WriteLine(p1 == p2);
+            // Vector v = new Vector(1, 2, 3);
+            //  Console.WriteLine(v.z);
+
+            World world = new World(Color.LightBlue);
+
+            world.Add(new Sphere(new Vector(0, 4, 15), 5, Color.White));
+            world.Add(new Sphere(new Vector(0, 0, 11), 3, Color.Yellow));
+            world.Add(new Sphere(new Vector(0, -2, 9), 2, Color.White));
+            world.Add(new Sphere(new Vector(1, 0.5, 8), 0.2, Color.Black));
+            world.Add(new Sphere(new Vector(-1, 0.5, 8), 0.2, Color.Black));
+        
+             ICamera camera = new OrtogonalCamera(new Vector(0, 0, -5), 0, new Vector(5, 5));
+            Raytracer tracer = new Raytracer();
+          
+            Bitmap image = tracer.Raytrace(world, camera, new Size(256, 256));
+           
+            Console.WriteLine("Start...");
+            image.Save("C:\\Users\\Graca\\Documents\\GitHub\\test2.png");
+            Console.WriteLine("Koniec");
+
+
 
         }
     }
