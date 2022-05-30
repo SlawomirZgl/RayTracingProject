@@ -149,19 +149,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Graca\\.nuget\\packages\\": {}
+    "C:\\Users\\zglis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Graca\\Documents\\GitHub\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
+      "projectUniqueName": "D:\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
       "projectName": "RayTracing",
-      "projectPath": "C:\\Users\\Graca\\Documents\\GitHub\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
-      "packagesPath": "C:\\Users\\Graca\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Graca\\Documents\\GitHub\\RayTracingProject\\RayTracing\\RayTracing\\obj\\",
+      "projectPath": "D:\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
+      "packagesPath": "C:\\Users\\zglis\\.nuget\\packages\\",
+      "outputPath": "D:\\RayTracingProject\\RayTracing\\RayTracing\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Graca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zglis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -207,7 +207,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

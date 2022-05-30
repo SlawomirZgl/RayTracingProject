@@ -33,6 +33,5 @@ namespace RayTracing
                 EyePosition.Z + offsetFromCenter.X * Math.Sin(Angle));
             return new Ray(position,direction);
         }
-
     }
 }

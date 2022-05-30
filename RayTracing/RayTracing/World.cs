@@ -22,12 +22,12 @@ namespace RayTracing
         public HitInfo TraceRay(Ray ray)
         {
             HitInfo result = new HitInfo();
-            double minimalDistance = Ray.Huge; 
-            double hitDistance = 0; 
+            double minimalDistance = Ray.Huge;
+            double hitDistance = 0;
+
             foreach (var obj in objects)
             {
-                if (obj.HitTest(ray, ref hitDistance) &&
-                hitDistance < minimalDistance)
+                if (obj.HitTest(ray, ref hitDistance) && hitDistance < minimalDistance)
                 {
                     minimalDistance = hitDistance; 
                     result.HitObject = true;

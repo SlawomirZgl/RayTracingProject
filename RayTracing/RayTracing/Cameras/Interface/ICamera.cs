@@ -10,5 +10,4 @@ namespace RayTracing
     {
         Ray GetRayTo(Vector relativeLocation);
     }
-
 }

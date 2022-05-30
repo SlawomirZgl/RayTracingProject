@@ -9,13 +9,12 @@ namespace RayTracing
 {
     class Raytracer
     {
-        public Bitmap Raytrace(World world, ICamera camera, Size imageSize)
+        public Bitmap RayTrace(World world, ICamera camera, Size imageSize)
         {
             Bitmap bmp = new Bitmap(imageSize.Width, imageSize.Height);
             for (int x = 0; x < imageSize.Width; x++)
                 for (int y = 0; y < imageSize.Height; y++)
-                {
-                  
+                {                  
                     Vector pictureCoordinates = new Vector(
                     ((x + 0.5) / (double)imageSize.Width) * 2 - 1,
                     ((y + 0.5) / (double)imageSize.Height) * 2 - 1);

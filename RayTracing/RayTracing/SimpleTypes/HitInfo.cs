@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace RayTracing
 {
-   class HitInfo
+    class HitInfo
     {
- public bool HitObject { get; set; }
-    public Color Color { get; set; }
-}
-
+        public bool HitObject { get; set; }
+        public Color Color { get; set; }
+    }
 }

@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = RayTracing
-build_property.ProjectDir = C:\Users\Graca\Documents\GitHub\RayTracingProject\RayTracing\RayTracing\
+build_property.ProjectDir = D:\RayTracingProject\RayTracing\RayTracing\

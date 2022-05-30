@@ -31,7 +31,6 @@ namespace RayTracing
             res.z = a.z + b.z;
          
             return res;
-
         }
         public static Vector operator -(Vector a, Vector b)
         {
@@ -41,7 +40,6 @@ namespace RayTracing
             res.z = a.z - b.z;
            
             return res;
-
         }
         public static Vector operator -(Vector a)
         {
@@ -77,13 +75,12 @@ namespace RayTracing
             {
                 throw new DivideByZeroException();
             }
-                Vector temp = new Vector();
-                temp.x = a.x / b;
-                temp.y = a.y / b;
-                temp.z = a.z / b;
+            Vector temp = new Vector();
+            temp.x = a.x / b;
+            temp.y = a.y / b;
+            temp.z = a.z / b;
 
-                return temp;
-           
+            return temp;          
         }
         public Vector Negate()
         {
@@ -98,8 +95,7 @@ namespace RayTracing
         {
             this.x *= s;
             this.y *= s;
-            this.z *= s;
-         
+            this.z *= s;       
 
             return this;
         }
@@ -129,7 +125,6 @@ namespace RayTracing
         {  return X * X + Y * Y + Z * Z; }
         public Vector Normalized()
         {  return this / this.Length();  }
-
     }
 
 }
