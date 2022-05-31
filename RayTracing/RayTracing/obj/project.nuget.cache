@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "n/p76FUAVaWObnfw9cn1jKx+xJKiQNas7mTIWNIETWp2XeQJWo4dqguZTl7E2jQUK6EBB6Jrpp4BGT6k6Jt/5Q==",
+  "dgSpecHash": "xoIevJ7eT60gnvbjI5Mvfi93G2+PBY/Zxat3sVeOc0XRwFiuKtMPFV6InYyizjSLS1870IaHL5Hml7gSODxe5w==",
   "success": true,
-  "projectFilePath": "D:\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
+  "projectFilePath": "C:\\Users\\Dawid\\Desktop\\szkolka\\PK\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\zglis\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512"
+    "C:\\Users\\Dawid\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dawid\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dawid\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512"
   ],
   "logs": []
 }

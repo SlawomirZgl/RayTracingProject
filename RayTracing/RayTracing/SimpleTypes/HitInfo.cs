@@ -9,7 +9,11 @@ namespace RayTracing
 {
     class HitInfo
     {
-        public bool HitObject { get; set; }
-        public Color Color { get; set; }
+        public Object HitObject { get; set; }
+        public World world { get; set; }
+        public Vector Normal { get; set; }
+        public Vector HitPoint { get; set; }
+        public Ray Ray { get; set; }
+
     }
 }

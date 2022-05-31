@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RayTracing.Materials;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -11,13 +12,13 @@ namespace RayTracing
     {
         Vector center;
         double radius;
-        public Sphere(Vector center,double radius, Color color)
+        public Sphere(Vector center,double radius, IMaterial material)
         {
             this.center = center;
             this.radius = radius;
-            base.Color = color;
+            base.material = material;
         }
-        public override bool HitTest(Ray ray, ref double minDistance)
+        public override bool HitTest(Ray ray, ref double minDistance,ref Vector normal)
         {
             double t;
             Vector distance = ray.Origin - center;
@@ -33,6 +34,8 @@ namespace RayTracing
             { t = (-b + discSq) / denom; }
             if (t < Ray.Epsilon)
             { return false; }
+            Vector hitPoint = (ray.Origin + ray.Direction * t);
+            normal = (hitPoint - center).Normalized();//Tu powinno byc normalized ale nie chce chwycic
             minDistance = t;
             return true;
         }

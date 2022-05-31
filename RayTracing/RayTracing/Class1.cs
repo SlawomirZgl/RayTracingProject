@@ -1,4 +1,6 @@
 ﻿using RayTracing.Cameras;
+using RayTracing.Materials;
+using RayTracing.Objects;
 using System;
 using System.Drawing;
 
@@ -10,14 +12,23 @@ namespace RayTracing
         {
             // Vector v = new Vector(1, 2, 3);
             //  Console.WriteLine(v.z);
+            IMaterial redMat = new PerfectOne(Color.Red);
+            IMaterial greenMat = new PerfectOne(Color.Green);
+            IMaterial blueMat = new PerfectOne(Color.Blue);
+            IMaterial grayMat = new PerfectOne(Color.Gray);
+            IMaterial yellowMaT = new PerfectOne(Color.Yellow);
+            IMaterial whiteMat = new PerfectOne(Color.White);
+            IMaterial blackMat = new PerfectOne(Color.Black);
 
             World world = new World(Color.LightBlue);
 
-            world.Add(new Sphere(new Vector(0, 4, 15), 5, Color.White));
-            world.Add(new Sphere(new Vector(0, 0, 11), 3, Color.Yellow));
-            world.Add(new Sphere(new Vector(0, -2, 9), 2, Color.White));
-            world.Add(new Sphere(new Vector(1, 0.5, 8), 0.2, Color.Black));
-            world.Add(new Sphere(new Vector(-1, 0.5, 8), 0.2, Color.Black));
+            world.Add(new Sphere(new Vector(0, 4, 15), 5, whiteMat));
+            world.Add(new Sphere(new Vector(0, 0, 11), 3, yellowMaT));
+            world.Add(new Sphere(new Vector(0, -2, 9), 2, whiteMat));
+            world.Add(new Sphere(new Vector(1, 0.5, 8), 0.2, blackMat));
+            world.Add(new Sphere(new Vector(-1, 0.5, 8), 0.2, blackMat));
+            world.Add(new Plane(new Vector(0, 2, 0), new Vector(0, 2, 0), grayMat));
+            world.AddLight(new LightTypePoint(new Vector(0, 5, -5), Color.White));
 
             /* world.Add(new Sphere(new Vector(-4, 0, 0), 2, Color.Red));
              world.Add(new Sphere(new Vector(4, 0, 0), 2, Color.Green));
@@ -31,8 +42,8 @@ namespace RayTracing
            
             Console.WriteLine("Start...");
             //image.Save("C:\\Users\\Graca\\Documents\\GitHub\\test2.png"); //Graca
-            image.Save("D:\\STUDIA\\Semestr VI\\PRIR\\Projekt\\test2.png"); //Slawek
-            //image.Save("Sciezka\\sciezka"); //Dawid
+           // image.Save("D:\\STUDIA\\Semestr VI\\PRIR\\Projekt\\test2.png"); //Slawek
+           image.Save("C:\\Users\\Dawid\\Desktop\\szkolka\\PK\\RayTracingProject\\RayTracing\\test2.png");// Dawid
 
             Console.WriteLine("Koniec");
         }
