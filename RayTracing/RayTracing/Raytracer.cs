@@ -3,8 +3,10 @@ using RayTracing.Structures;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace RayTracing
@@ -13,18 +15,36 @@ namespace RayTracing
     {
         public Bitmap RayTrace(World world, ICamera camera, Size imageSize)
         {
-            Bitmap bmp = new Bitmap(imageSize.Width, imageSize.Height);
-            for (int x = 0; x < imageSize.Width; x++)
-                for (int y = 0; y < imageSize.Height; y++)
-                {                  
-                    Vector pictureCoordinates = new Vector(
-                    ((x + 0.5) / (double)imageSize.Width) * 2 - 1,
-                    ((y + 0.5) / (double)imageSize.Height) * 2 - 1);
-                   
-                    Ray ray = camera.GetRayTo(pictureCoordinates);
-                    bmp.SetPixel(x, y, StripColor(ShadeRay(world,ray)));
+            unsafe
+            {
+                Bitmap bmp = new Bitmap(imageSize.Width, imageSize.Height,PixelFormat.Format24bppRgb);
+
+             BitmapData bitmapData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
+
+                int bytesPerPixel = System.Drawing.Bitmap.GetPixelFormatSize(bmp.PixelFormat) / 8;
+                int heightInPixels = bitmapData.Height;
+                int widthInBytes = bitmapData.Width * bytesPerPixel;
+                byte* PtrFirstPixel = (byte*)bitmapData.Scan0;
+                Parallel.For(0, heightInPixels, y =>
+                {
+                    byte* currentLine = PtrFirstPixel + (y * bitmapData.Stride);
+                    for (int x = 0; x < widthInBytes; x = x + bytesPerPixel)
+                    {
+                        Vector pictureCoordinates = new Vector(
+                        ((x + 0.5) / (double)widthInBytes) * 2 - 1,
+                        ((y + 0.5) / (double)heightInPixels) * 2 - 1);
+
+                        Ray ray = camera.GetRayTo(pictureCoordinates);
+                        Color color = StripColor(ShadeRay(world, ray));
+                        currentLine[x] = (byte)color.B;
+                        currentLine[x+1] = (byte)color.G;
+                        currentLine[x+2] = (byte)color.R;
+                    }
                 }
-            return bmp;
+                );
+                bmp.UnlockBits(bitmapData);
+                return bmp;
+            }
         }
         public RgbStruct ShadeRay(World world, Ray ray)
         {
