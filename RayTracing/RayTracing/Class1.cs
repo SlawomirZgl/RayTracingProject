@@ -52,8 +52,8 @@ namespace RayTracing
             Bitmap image = tracer.RayTrace(world, camera, new Size(1920, 1080));
             watch.Stop();
             Console.WriteLine("Czas bitmapy:: "+watch.ElapsedMilliseconds+"ms::");
-            image.Save("C:\\Users\\Graca\\Documents\\GitHub\\test3.png"); //Graca
-           // image.Save("D:\\STUDIA\\Semestr VI\\PRIR\\Projekt\\test2.png"); //Slawek
+            //image.Save("C:\\Users\\Graca\\Documents\\GitHub\\test3.png"); //Graca
+            image.Save("D:\\STUDIA\\Semestr VI\\PRIR\\Projekt\\test2.png"); //Slawek
            //image.Save("C:\\Users\\Dawid\\Desktop\\szkolka\\PK\\RayTracingProject\\RayTracing\\test2.png");// Dawid
 
             Console.WriteLine("Koniec");

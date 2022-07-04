@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RayTracing.Materials
 {
-    interface IMaterial
+    public interface IMaterial
     {
         RgbStruct Radiance(LightTypePoint light, HitInfo hit);
     }

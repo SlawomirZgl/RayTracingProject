@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "viq3lFWLDeWOOQHvs1lqCRJ1C7dj7QtaNBx4yDRoRxz5AfBKYwUWzM/TpKztBX2GBoGRd0j07B8WaMbTBYAu9w==",
+  "dgSpecHash": "pI5au/C5WkZeFfHnrQQR1k9EBB+eIFGVzxk5Th0MlAq71axMoJ0y9EjlY4QcqjDcLP+SWo0zrsU6hkY54iiE/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Graca\\Documents\\GitHub\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
+  "projectFilePath": "D:\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Graca\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\Graca\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\Graca\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512"
+    "C:\\Users\\zglis\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\zglis\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

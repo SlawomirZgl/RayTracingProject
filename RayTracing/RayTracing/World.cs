@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RayTracing
 {
-    class World
+    public class World
     {
         List<Object> objects;
         List<LightTypePoint> lights;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RayTracing.Structures
 {
-    struct RgbStruct
+    public struct RgbStruct
     {
         public double R { get; set; }
         public double G { get; set; }

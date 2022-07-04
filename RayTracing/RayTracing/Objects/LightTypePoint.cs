@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RayTracing.Objects
 {
-    class LightTypePoint
+    public class LightTypePoint
     {
         public Vector Position { get;  set; }
         public RgbStruct Color { get;  set; }

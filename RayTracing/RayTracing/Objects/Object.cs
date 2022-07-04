@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RayTracing
 {
-    abstract class Object
+    public abstract class Object
     {
         public Color Color { get; set; }
         public IMaterial material { get; set; }

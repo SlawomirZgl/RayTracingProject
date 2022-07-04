@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RayTracing
 {
-    class HitInfo
+    public class HitInfo
     {
         public Object HitObject { get; set; }
         public World world { get; set; }

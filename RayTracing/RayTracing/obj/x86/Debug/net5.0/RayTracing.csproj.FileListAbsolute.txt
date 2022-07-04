@@ -25,7 +25,6 @@ D:\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\RayTracing.deps.
 D:\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\RayTracing.runtimeconfig.json
 D:\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\RayTracing.runtimeconfig.dev.json
 D:\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\RayTracing.dll
-D:\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\ref\RayTracing.dll
 D:\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\RayTracing.pdb
 D:\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
 D:\RayTracingProject\RayTracing\RayTracing\bin\x86\Debug\net5.0\System.Drawing.Common.dll
@@ -64,3 +63,4 @@ C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\x8
 C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\x86\Debug\net5.0\ref\RayTracing.dll
 C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\x86\Debug\net5.0\RayTracing.pdb
 C:\Users\Dawid\Desktop\szkolka\PK\RayTracingProject\RayTracing\RayTracing\obj\x86\Debug\net5.0\RayTracing.genruntimeconfig.cache
+D:\RayTracingProject\RayTracing\RayTracing\obj\x86\Debug\net5.0\refint\RayTracing.dll

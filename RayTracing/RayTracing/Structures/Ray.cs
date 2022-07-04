@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayTracing
 {
-    struct Ray
+    public struct Ray
     {
         public const double Epsilon = 0.0001;
         public const double Huge = double.MaxValue;
