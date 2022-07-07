@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pI5au/C5WkZeFfHnrQQR1k9EBB+eIFGVzxk5Th0MlAq71axMoJ0y9EjlY4QcqjDcLP+SWo0zrsU6hkY54iiE/A==",
+  "dgSpecHash": "q6qduSb+LH30GKHItCY9cKBPzX8Xq/DtLgW5Rrbi+Gbb5TmMiXFZyDl07n0zEATXFpXg7ZtQJTbpyaC3hbP62A==",
   "success": true,
   "projectFilePath": "D:\\RayTracingProject\\RayTracing\\RayTracing\\RayTracing.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\zglis\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

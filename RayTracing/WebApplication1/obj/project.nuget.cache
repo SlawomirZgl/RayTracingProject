@@ -1,17 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GWhxJro1I9Vr9itDdajc0YI6M9Cpn911IIbQHoi3Xt4rqzB6CiJC3PQosT1/q4/1blpKRZ0mx7OoDKHnacDGfw==",
+  "dgSpecHash": "cHho5+ma1mH6ZJ318iAjtbPtkiV7HHdiyA1qmpNm3bF4bHOuimMY4RRA/PeApXfE6CJs9D798bmh3lESanZFLw==",
   "success": true,
   "projectFilePath": "D:\\RayTracingProject\\RayTracing\\WebApplication1\\WebApplication1.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\zglis\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
-    "C:\\Users\\zglis\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
