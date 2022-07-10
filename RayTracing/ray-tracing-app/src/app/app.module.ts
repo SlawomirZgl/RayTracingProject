@@ -5,6 +5,11 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VectorFormComponent } from './vector-form/vector-form.component';
+import { ObjectService } from './object.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card'; 
 
 @NgModule({
   declarations: [
@@ -14,9 +19,13 @@ import { VectorFormComponent } from './vector-form/vector-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule
   ],
-  providers: [],
+  providers: [ObjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

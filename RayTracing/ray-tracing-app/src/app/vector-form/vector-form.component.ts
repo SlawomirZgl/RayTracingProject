@@ -22,8 +22,8 @@ export class VectorFormComponent implements OnInit {
     { }
 
   ngOnInit(): void {     
-      this.objectService.get().subscribe(res => console.log(res));
-      console.log("AAAAAAAAAAAAAAAAAAAAAAA");
+      // this.objectService.get().subscribe(res => console.log(res));
+      // console.log("AAAAAAAAAAAAAAAAAAAAAAA");
   }
 
   onSubmit(event: NgForm): void {

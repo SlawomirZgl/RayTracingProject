@@ -1,6 +1,4 @@
-﻿
-
-using RayTracing.Cameras;
+﻿using RayTracing.Cameras;
 using RayTracing.Materials;
 using RayTracing.Objects;
 using System;
@@ -53,9 +51,9 @@ namespace RayTracing
             watch.Stop();
             Console.WriteLine("Czas bitmapy:: "+watch.ElapsedMilliseconds+"ms::");
             //image.Save("C:\\Users\\Graca\\Documents\\GitHub\\test3.png"); //Graca
-            image.Save("D:\\STUDIA\\Semestr VI\\PRIR\\Projekt\\test2.png"); //Slawek
-           //image.Save("C:\\Users\\Dawid\\Desktop\\szkolka\\PK\\RayTracingProject\\RayTracing\\test2.png");// Dawid
-
+           // image.Save("D:\\STUDIA\\Semestr VI\\PRIR\\Projekt\\test2.png"); //Slawek
+            //image.Save("C:\\Users\\Dawid\\Desktop\\szkolka\\PK\\RayTracingProject\\RayTracing\\test2.png");// Dawid
+            image.Save(@".\..\..\..\..\..\obraz.png");
             Console.WriteLine("Koniec");
             czas.Stop();
             Console.WriteLine("Czas programu:: " + czas.ElapsedMilliseconds + "ms::");

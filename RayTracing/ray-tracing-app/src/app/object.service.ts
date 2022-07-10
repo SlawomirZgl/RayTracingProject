@@ -12,7 +12,13 @@ export class ObjectService {
   // post(x: number, y: number, z: number): Observable<Vector>{
   //   return this.httpClient.post<Vector>('https://localhost:7041/object/wektor' + x, y, z);
   // }
-  get():Observable<String>{
-    return this.httpClient.get<String>('https://localhost:7041/object/siema');
+  // get():Observable<String>{
+  //   return this.httpClient.get<String>('https://localhost:7041/object/siema');
+  // }
+
+  public downloadFile()
+  {
+    return this.httpClient.get("https://localhost:7041/download", 
+    {observe:'response', responseType:'blob'})
   }
 }
