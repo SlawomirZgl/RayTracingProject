@@ -26,9 +26,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-
-    /* background-color: #ff1; */
-    /* background-size: auto; */
+    
     background: linear-gradient(
         140deg, 
         rgb(123, 31, 162) 0%, 

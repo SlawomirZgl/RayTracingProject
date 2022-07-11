@@ -36,12 +36,11 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/download", () =>
 {
-    // Thread th = new Thread(Class1.Main);     //to nie dziala jak co
-    // th.Start();
-    // th.Join();
-    Class1.Main();
+     Thread th = new Thread(Class1.fun);     
+     th.Start();
+     th.Join();
 
-    return Results.File(@"D:\RayTracingProject\RayTracing\obraz.png", "image/png", "obraz.png");
+    return Results.File("D:\\RayTracingProject\\RayTracing\\RayTracing\\bin\\x86\\Debug\\net6.0\\obraz.png", "image/png", "obraz.png");
 });
 
 app.UseHttpsRedirection();

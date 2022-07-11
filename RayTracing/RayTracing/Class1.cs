@@ -11,7 +11,10 @@ namespace RayTracing
 
     public class Class1
     {
-      public static void Main()
+        public static void Main()
+        {
+        }
+        public static void fun()
         {
             var czas = System.Diagnostics.Stopwatch.StartNew();
             Console.WriteLine("Start...");
@@ -32,7 +35,7 @@ namespace RayTracing
             world.Add(new Sphere(new Vector(4, 1, 0), 2, hotPinkMat));
             world.Add(new Sphere(new Vector(-4, 0, 0), 3, whiteMat));
             world.Add(new Sphere(new Vector(4, 0, 0), 3, yellowMaT));
-            world.Add(new Sphere(new Vector(0, 0, 3), 2, whiteMat));
+            world.Add(new Sphere(new Vector(0, 0, 3), 2, blackMat));
             
             world.Add(new Plane(new Vector(0, -2, 0), new Vector(0, 1, 0), grayMat));
             world.AddLight(new LightTypePoint(new Vector(5, 5, -5), Color.White));
@@ -51,9 +54,9 @@ namespace RayTracing
             watch.Stop();
             Console.WriteLine("Czas bitmapy:: "+watch.ElapsedMilliseconds+"ms::");
             //image.Save("C:\\Users\\Graca\\Documents\\GitHub\\test3.png"); //Graca
-           // image.Save("D:\\STUDIA\\Semestr VI\\PRIR\\Projekt\\test2.png"); //Slawek
+            //image.Save(@"D:\RayTracingProject\RayTracing\obraz.png"); //Slawek
             //image.Save("C:\\Users\\Dawid\\Desktop\\szkolka\\PK\\RayTracingProject\\RayTracing\\test2.png");// Dawid
-            image.Save(@".\..\..\..\..\..\obraz.png");
+            image.Save("obraz.png");
             Console.WriteLine("Koniec");
             czas.Stop();
             Console.WriteLine("Czas programu:: " + czas.ElapsedMilliseconds + "ms::");
