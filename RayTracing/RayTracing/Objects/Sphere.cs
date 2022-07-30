@@ -35,7 +35,7 @@ namespace RayTracing
             if (t < Ray.Epsilon)
             { return false; }
             Vector hitPoint = (ray.Origin + ray.Direction * t);
-            normal = (hitPoint - center).Normalized();//Tu powinno byc normalized ale nie chce chwycic
+            normal = (hitPoint - center).Normalized();
             minDistance = t;
             return true;
         }

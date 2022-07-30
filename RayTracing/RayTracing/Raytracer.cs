@@ -17,9 +17,9 @@ namespace RayTracing
         {
             unsafe
             {
-                Bitmap bmp = new Bitmap(imageSize.Width, imageSize.Height,PixelFormat.Format24bppRgb);
+                Bitmap bmp = new Bitmap(imageSize.Width, imageSize.Height, PixelFormat.Format24bppRgb);
 
-             BitmapData bitmapData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
+                BitmapData bitmapData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
 
                 int bytesPerPixel = System.Drawing.Bitmap.GetPixelFormatSize(bmp.PixelFormat) / 8;
                 int heightInPixels = bitmapData.Height;
@@ -37,8 +37,8 @@ namespace RayTracing
                         Ray ray = camera.GetRayTo(pictureCoordinates);
                         Color color = StripColor(ShadeRay(world, ray));
                         currentLine[x] = (byte)color.B;
-                        currentLine[x+1] = (byte)color.G;
-                        currentLine[x+2] = (byte)color.R;
+                        currentLine[x + 1] = (byte)color.G;
+                        currentLine[x + 2] = (byte)color.R;
                     }
                 }
                 );
@@ -46,6 +46,7 @@ namespace RayTracing
                 return bmp;
             }
         }
+        
         public RgbStruct ShadeRay(World world, Ray ray)
         {
             HitInfo info = world.TraceRay(ray);

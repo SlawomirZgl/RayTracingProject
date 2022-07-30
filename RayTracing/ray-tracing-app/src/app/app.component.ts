@@ -9,7 +9,6 @@ import { ObjectService } from './object.service';
 export class AppComponent {
   title = 'ray-tracing-app';
   imageName: string ="";
-  previewSignsrc:any
   constructor(private objectService: ObjectService){
 
   }
@@ -20,8 +19,7 @@ export class AppComponent {
       {
         let fileName = res.headers.get('content-disposition')
         ?.split(';')[1].split('=')[1];
-        let blob:Blob=res.body as Blob;
-        this.previewSignsrc = URL.createObjectURL(blob)
+        let blob:Blob=res.body as Blob;      
 
         let a = document.createElement('a');
         a.download=fileName!;

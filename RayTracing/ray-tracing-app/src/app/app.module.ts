@@ -4,7 +4,6 @@ import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VectorFormComponent } from './vector-form/vector-form.component';
 import { ObjectService } from './object.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
@@ -14,7 +13,6 @@ import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
-    VectorFormComponent
   ],
   imports: [
     BrowserModule,
